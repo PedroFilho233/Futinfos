@@ -1,0 +1,299 @@
+body,
+ul,
+li,
+p {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-size: 1.2rem;
+  font-family: Arial;
+}
+
+body {
+  margin-bottom: 100px;
+  padding: 0px;
+  margin: 0 auto;
+  background-image: url(../img/fundo.png);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 100px;
+}
+
+
+.header {
+  background: #1d1e20;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  margin-left: 10px;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px;
+}
+
+
+button.slick-prev {
+  font-size: 0px;
+  border: none;
+  width: 25px;
+  height: 51px;
+  background-color: transparent;
+  background-image: url(../img/anterior.png);
+  position: absolute;
+  z-index: 9; 
+  top: 35%;
+  left: 14%;
+}
+
+button.slick-next {
+  font-size: 0px;
+  border: none;
+  width: 25px;
+  height: 51px;
+  background-color: transparent;
+  background-image: url(../img/proxima.png);
+  position: absolute;
+  z-index: 9; 
+  top: 35%;
+  right: 14%;
+}
+
+.slick-list {
+  width: 100%!important;
+}
+
+.slick-initialized {
+  overflow: hidden;
+}
+
+.slick-dots li button {
+ font-size: 0px;
+ border: 5px solid #ffffff;
+ width: 26px;
+ height: 26px;
+ background: transparent;
+ border-radius: 50%;
+ cursor: pointer;
+}
+
+.slick-dots {
+  margin: 0 auto;
+  width: 50%;
+  position: absolute;
+  left: 46%;
+  top: 400px;
+}
+
+li.slick-active button {
+background: #790d9c;
+}
+
+.slick-dots li {
+  padding-left: 10px;
+  display: inline-block;
+}
+
+.col-100{
+  width: 100%;
+  position: relative;
+  margin-top: 0px;
+}
+
+
+.slider-principal {
+  margin-top: 50px;
+}
+
+a:hover {
+    color: #790d9c;
+}
+
+.titulos h3{
+  padding-left: 18px;
+  font-size: 24px;
+  font-family: Arial;
+  color: #ffffff;
+}
+
+.titulos p{
+  padding-left: 18px;
+  font-size: 22px;
+  font-family: Arial;
+  margin-top: -25px;
+  color: #ffffff;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #790d9c;
+  width: 318px;
+  height: 286px;
+  margin: 8px;
+  border-radius: 15px;
+}
+
+.card-image {
+  background-color: aqua;
+  height: 200px;
+  margin-bottom: 5px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px 15px 0 0;
+}
+
+.publi-1 {
+  background-image: url(/img/messi-computer-wallpaper-thumb.jpg);
+}
+
+.publi-2 {
+  background-image: url(/img/messi-computer-wallpaper-thumb.jpg);
+}
+
+.publi-3 {
+  background-image: url(/img/messi-computer-wallpaper-thumb.jpg);
+}
+
+.publi-4 {
+  background-image: url(/img/messi-computer-wallpaper-thumb.jpg);
+}
+
+.card p {
+  padding: 5px;         
+  color: white;                                                                  
+}
+
+.card:hover {
+  background-color: rgb(82, 1, 87);
+  color: white;
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all 1s ease;
+}
+
+/*Times*/
+
+.card-times {
+  background-color: #790d9c;
+  width: 220px;
+  height: 350px;
+  margin: 8px;
+  border-radius: 15px;
+}
+
+.card-image-times img {
+  background-color: white;
+  height: 250px;
+  margin-bottom: 5px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px 15px 0 0;
+  max-width: 100%;
+  display: block;
+}
+
+.card-times p {
+  padding: 5px;         
+  color: white;                                                                  
+}
+
+.card-times:hover {
+  background-color: rgb(82, 1, 87);
+  color: white;
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all 1s ease;
+}
+
+
+
+.footer {
+  background-color: #1d1e20;
+  padding: 40px 0;
+  margin-top: 40px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+  margin-left: 45%;
+}
+
+.footer-col h3 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.footer-col h3:before {
+  content:'';
+  position: absolute;
+  bottom: -10px;
+  background-color: #790d9c;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col .redes-sociais a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  margin-right: 0 10px 10px 0;
+  align-items: center;
+  line-height: 40px;
+}
+
+  
+
+@media (max-width: 999px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+    margin-left: 0;
+  }
+
+  .col-100{
+    display: none;
+    opacity: 0;
+  }
+
+}
+
+
+
+
+
+
