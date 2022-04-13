@@ -17,6 +17,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover; 
   background-position: center;
+  background: rgb(35 35 46);
 }
 
 a {
@@ -29,29 +30,44 @@ h1 {
   margin-top: 100px;
 }
 
+.logo {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
 
-.header {
-  background: #1d1e20;
+nav {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 20px;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  background: #23232e;
+  height: 15vh;
 }
 
-.menu {
+
+.nav-list {
+  list-style: none;
   display: flex;
 }
 
-.menu li {
-  margin-left: 10px;
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
 }
 
-.menu li a {
-  display: block;
-  padding: 10px;
+.mobile-menu {
+  display: none;
+  cursor: pointer;
 }
 
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.3s;
+}
 
 button.slick-prev {
   font-size: 0px;
@@ -122,7 +138,7 @@ background: #790d9c;
 
 
 .slider-principal {
-  margin-top: 50px;
+  border-top: 2px solid white;
 }
 
 a:hover {
@@ -130,18 +146,19 @@ a:hover {
 }
 
 .titulos h3{
-  padding-left: 18px;
+  padding-left: 40px;
   font-size: 24px;
   font-family: Arial;
   color: #ffffff;
 }
 
 .titulos p{
-  padding-left: 18px;
+  padding-left: 40px;
   font-size: 22px;
   font-family: Arial;
   margin-top: -25px;
   color: #ffffff;
+  margin-bottom: 12px;
 }
 
 .container {
@@ -151,15 +168,16 @@ a:hover {
 }
 
 .card {
-  background-color: #790d9c;
-  width: 318px;
+  width: 308px;
   height: 286px;
   margin: 8px;
   border-radius: 15px;
+  background-color: white;
 }
 
 .card-image {
-  background-color: aqua;
+  background-color: white;
+  border-bottom: 1px solid rgb(35 35 46); 
   height: 200px;
   margin-bottom: 5px;
   background-size: cover;
@@ -167,128 +185,155 @@ a:hover {
   border-radius: 15px 15px 0 0;
 }
 
-.publi-1 {
-  background-image: url(/img/messi-computer-wallpaper-thumb.jpg);
-}
-
-.publi-2 {
-  background-image: url(/img/messi-computer-wallpaper-thumb.jpg);
-}
-
-.publi-3 {
-  background-image: url(/img/messi-computer-wallpaper-thumb.jpg);
-}
-
-.publi-4 {
-  background-image: url(/img/messi-computer-wallpaper-thumb.jpg);
-}
 
 .card p {
   padding: 5px;         
-  color: white;                                                                  
+  color: black;                                                                  
 }
 
 .card:hover {
-  background-color: rgb(82, 1, 87);
-  color: white;
   cursor: pointer;
   transform: scale(1.03);
   transition: all 1s ease;
 }
 
-/*Times*/
-
-.card-times {
-  background-color: #790d9c;
-  width: 220px;
-  height: 350px;
-  margin: 8px;
-  border-radius: 15px;
+.publi-1 {
+  background-image: url(/img/brasilvence.png);
 }
 
-.card-image-times img {
-  background-color: white;
-  height: 250px;
-  margin-bottom: 5px;
-  background-size: cover;
-  background-position: center;
-  border-radius: 15px 15px 0 0;
-  max-width: 100%;
-  display: block;
+.publi-2 {
+  background-image: url(/img/brasilvence.png);
 }
 
-.card-times p {
-  padding: 5px;         
-  color: white;                                                                  
+.publi-3 {
+  background-image: url(/img/brasilvence.png);
 }
 
-.card-times:hover {
-  background-color: rgb(82, 1, 87);
-  color: white;
-  cursor: pointer;
-  transform: scale(1.03);
-  transition: all 1s ease;
+.publi-4 {
+  background-image: url(/img/brasilvence.png);
 }
 
+/*Jogos*/
 
+.jogos-1 {
+  background-image: url(/img/mbbappeneymar.jpg);
+}
+
+.jogos-2 {
+  background-image: url(/img/mbbappeneymar.jpg);
+}
+
+.jogos-3 {
+  background-image: url(/img/mbbappeneymar.jpg);
+}
+
+.jogos-4 {
+  background-image: url(/img/mbbappeneymar.jpg);
+}
+
+/*Ligas*/
+
+.ligas-1 {
+  background-image: url(/img/premier\ league-logo.png);
+}
+
+.ligas-2 {
+  background-image: url(/img/la\ liga.png);
+}
+
+.ligas-3 {
+  background-image: url(/img/champions\ league\ -\ logo.png);
+}
+
+.ligas-4 {
+  background-image: url(/img/brasileirão\ -\ logo.jpg);
+}
+
+/*Jogadores*/
 
 .footer {
-  background-color: #1d1e20;
-  padding: 40px 0;
-  margin-top: 40px;
-}
-
-.row {
   display: flex;
   flex-wrap: wrap;
+  background-color: rgb(35 35 46);
+  margin-top: 40px;
+  border-top: 2px solid white;
+  padding: 30px;
 }
 
-.footer-col {
-  width: 25%;
-  padding: 0 15px;
-  margin-left: 45%;
-}
-
-.footer-col h3 {
-  font-size: 18px;
-  color: #ffffff;
+.footer p {
+  color: white;
   text-transform: uppercase;
-  margin-bottom: 35px;
-  position: relative;
 }
-
-.footer-col h3:before {
-  content:'';
-  position: absolute;
-  bottom: -10px;
-  background-color: #790d9c;
-  height: 2px;
-  box-sizing: border-box;
-  width: 50px;
-}
-
-.footer-col .redes-sociais a {
-  display: inline-block;
-  height: 40px;
-  width: 40px;
-  margin-right: 0 10px 10px 0;
-  align-items: center;
-  line-height: 40px;
-}
-
-  
 
 @media (max-width: 999px) {
-  .footer-col {
-    width: 50%;
-    margin-bottom: 30px;
-    margin-left: 0;
+
+  .titulos h3, .titulos p {
+    text-align: center;
   }
 
   .col-100{
     display: none;
     opacity: 0;
   }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-list {
+    position: absolute;
+    top: 15vh;
+    right: 0;
+    width: 100vw;
+    height: 92vh;
+    background: #23232e;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+    border-top: 2px solid white;
+  }
+
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+  .mobile-menu {
+    display: block;
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+.titulos h3, .titulos p {
+  text-align: center;
+  padding: 0;
+}
 
 }
 
