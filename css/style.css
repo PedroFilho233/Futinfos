@@ -122,7 +122,7 @@ button.slick-next {
 }
 
 li.slick-active button {
-background: #790d9c;
+background: #23232e;
 }
 
 .slick-dots li {
@@ -146,14 +146,14 @@ a:hover {
 }
 
 .titulos h3{
-  padding-left: 40px;
+  text-align: center;
   font-size: 24px;
   font-family: Arial;
   color: #ffffff;
 }
 
 .titulos p{
-  padding-left: 40px;
+  text-align: center;
   font-size: 22px;
   font-family: Arial;
   margin-top: -25px;
@@ -168,11 +168,11 @@ a:hover {
 }
 
 .card {
-  width: 308px;
+  width: 300px;
   height: 286px;
   margin: 8px;
   border-radius: 15px;
-  background-color: white;
+  background-color: #32323e;
 }
 
 .card-image {
@@ -182,16 +182,22 @@ a:hover {
   margin-bottom: 5px;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   border-radius: 15px 15px 0 0;
 }
 
-
 .card p {
   padding: 5px;         
-  color: black;                                                                  
+  color: white;                                                                  
 }
 
-.card:hover {
+p.ligas {
+  text-align: center;
+  font-size: larger;
+  margin-top: 20px;
+}
+
+.card:hover, .card-times:hover, .card-jogadores:hover {
   cursor: pointer;
   transform: scale(1.03);
   transition: all 1s ease;
@@ -249,7 +255,211 @@ a:hover {
   background-image: url(/img/brasileirão\ -\ logo.jpg);
 }
 
+/*Times*/
+
+.card-times {
+  width: 150px;
+  height: 250px;
+  margin: 8px;
+  border-radius: 15px;
+  background-color: #32323e;
+}
+
+.card-image-times {
+  background-color: white;
+  border-bottom: 1px solid rgb(35 35 46); 
+  height: 200px;
+  margin-bottom: 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 15px 15px 0 0;
+}
+
+/*Times-Europa*/
+
+.times-1 {
+  background-image: url(/img/barcelona.png);
+}
+
+.times-2 {
+  background-image: url(/img/real\ madrid.png);
+}
+
+.times-3 {
+  background-image: url(/img/liverpool.png);
+}
+
+.times-4 {
+  background-image: url(/img/manchester\ united.png);
+}
+
+.times-5 {
+  background-image: url(/img/manchester\ city.png);
+}
+
+.times-6 {
+  background-image: url(/img/bayern.png);
+}
+
+.times-7 {
+  background-image: url(/img/juventus.png);
+}
+
+.times-8 {
+  background-image: url(/img/psg.png);
+}
+
+/*Times-Brasil*/
+
+.times-11 {
+  background-image: url(/img/flamengo.png);
+}
+
+.times-12 {
+  background-image: url(/img/palmeiras.png);
+}
+
+.times-13 {
+  background-image: url(/img/atletico-mg.png);
+}
+
+.times-14 {
+  background-image: url(/img/corinthians.png);
+}
+
+.times-15 {
+  background-image: url(/img/são\ paulo.png);
+}
+
+.times-16 {
+  background-image: url(/img/santos.png);
+}
+
+.times-17 {
+  background-image: url(/img/fluminense.png);
+}
+
+.times-18 {
+  background-image: url(/img/internacional.png);
+}
+
+.card-times p, .card-jogadores p, .card-campeonatos {
+  color: white;
+  text-align: center;
+  margin-top: 12px;
+}
 /*Jogadores*/
+
+.card-jogadores {
+  width: 150px;
+  height: 250px;
+  margin: 8px;
+  border-radius: 15px;
+  background-color: #32323e;
+}
+
+.card-campeonatos {
+  width: 200px;
+  height: 250px;
+  margin: 8px;
+  border-radius: 15px;
+  background-color: #32323e;
+}
+
+.card-image-jogadores, .card-image-campeonatos {
+  background-color: white;
+  border-bottom: 1px solid rgb(35 35 46); 
+  height: 200px;
+  margin-bottom: 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.jogadores-1 {
+  background-image: url(/img/messi.png);
+}
+
+.jogadores-2 {
+  background-image: url(/img/cr7.png);
+}
+
+.jogadores-3 {
+  background-image: url(/img/neymar.jpg);
+}
+
+.jogadores-4 {
+  background-image: url(/img/mbbape.png);
+}
+
+.jogadores-5 {
+  background-image: url(/img/lewandowski.png);
+}
+
+.jogadores-6 {
+  background-image: url(/img/benzema.png);
+}
+
+.jogadores-7 {
+  background-image: url(/img/salah.png);
+}
+
+.jogadores-8 {
+  background-image: url(/img/de\ bruyne.png);
+}
+
+/*Campeonatos*/
+
+
+.campeonatos-1{
+  background-image: url(/img/champions\ league-campeonatos.png);
+}
+
+.campeonatos-2 {
+  background-image: url(/img/premier\ league-logo.png);
+}
+
+.campeonatos-3 {
+  background-image: url(/img/la\ liga.png);
+}
+
+.campeonatos-4 {
+  background-image: url(/img/bundesliga.png);
+}
+
+.campeonatos-5 {
+  background-image: url(/img/serie\ a.png);
+}
+
+.campeonatos-6 {
+  background-image: url(/img/ligue\ 1.png);
+}
+
+.campeonatos-11 {
+  background-image: url(/img/libertadores.png);
+}
+
+.campeonatos-12 {
+  background-image: url(/img/brasileirão-campeonatos.png);
+}
+
+.campeonatos-13 {
+  background-image: url(/img/copa\ do\ brasil.png);
+}
+
+.campeonatos-14 {
+  background-image: url(/img/copa\ sulamericana.png);
+}
+
+.campeonatos-15 {
+  background-image: url(/img/recopa.png);
+}
+
+.campeonatos-16 {
+  background-image: url(/img/supercopa\ do\ brasil.png);
+}
+
 
 .footer {
   display: flex;
